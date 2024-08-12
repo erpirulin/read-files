@@ -1,0 +1,12 @@
+file = open("/usercode/files/pull_ups.txt")
+n = int(input())
+
+#tu código va aquí
+current_line = 0
+for line in file:
+    if current_line == n:
+        print(line)
+        break    
+    current_line += 1       
+       
+file.close()
